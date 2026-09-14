@@ -140,20 +140,59 @@ header a:hover {
     margin-left: 15px;
 }
 .team {
- display: flex;
-  flex-wrap: wrap; 
-  gap: 16px;
-  padding: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 0;
 }
-.part h2{
-      position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  color: #fff;
-  padding: 8px 16px;
-  font-size: 15px;
-  font-weight: normal;
-  margin: 0;
+
+.part {
+    flex: 1 1 calc(25% - 16px);
+    min-width: 0;
 }
+
+.part img {
+    width: 100%;
+    display: block;
+}
+
+.part h2 {
+    position: static;
+    margin: 10px 0;
+    padding: 0;
+    background-color: transparent;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.part h5 {
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+}
+
+.part p {
+    margin-left: 0;
+}
+@media (max-width: 768px) {
+    header nav{
+        display:none;
+    }
+    header{
+        height: 60px;
+    }
+    }
+    .banner h4 .architects{
+        font-size: 1.5em;
+        display:none;
+    }
+    .card {
+        flex: 0 0 calc(100% - 12px); 
+    }
+    .part {
+        flex: 1 1 calc(100% - 16px);
+    }
+
 
