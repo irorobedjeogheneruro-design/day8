@@ -176,13 +176,12 @@ header a:hover {
 .part p {
     margin-left: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 550px) {
     header nav{
         display:none;
-    }
+     }
     header{
         height: 60px;
-    }
     }
     .banner h4 .architects{
         font-size: 1.5em;
@@ -194,5 +193,6 @@ header a:hover {
     .part {
         flex: 1 1 calc(100% - 16px);
     }
+}
 
 
